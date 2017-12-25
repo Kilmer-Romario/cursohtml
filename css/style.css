@@ -1,0 +1,25 @@
+h1{
+    color: rgb(238, 20, 20);
+    text-align: center
+}
+body 
+{
+    background-image: url("imagen/informatica6.jpg");
+    background-size: cover;
+}
+.botonpersonalizado{
+    font-size: 20px; 
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding: 5px 10px;
+    margin: auto;
+    width: 50%;
+    align-content: center;
+    background-color: aqua;
+    border: 2px solid #0016b0;
+    border-radius: 10px;
+}
+.botonpersonalizado:hover{
+    color: rgb(28, 52, 119);
+    background-color: #ffffff;
+}
