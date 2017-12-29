@@ -6,9 +6,10 @@ h1{
     color: rgb(238, 20, 20);
     text-align: center;
 }
+
 body 
 {
-    background: whitesmoke;
+    background: rgb(212, 199, 199);
     /*background-image: url("imagen/informatica6.jpg");
     background-size: cover;
     */
@@ -59,7 +60,7 @@ header nav ul li{
 .ventana{
     width:400px;
     position:absolute;
-    top:15%;
+    top:10%;
     left:50%;
     margin-left:-200px;
 }
@@ -85,8 +86,9 @@ header nav ul li{
      background: yellow;
      padding: 2cm 1cm;
  }
- .botones{
+ .botones input{
      border-radius: 10px;
+     padding: .5cm;
      color: white;
  }
  .registrar{
