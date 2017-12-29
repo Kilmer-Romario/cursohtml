@@ -6,53 +6,118 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <title>Primera clase</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+    <script src="javascript/jquery/barra_superior.js"></script>
+    <script src="javascript/jquery/ventanamodal.js"></script>
 </head>
 <body>
-    <div>
-        <button class="botonpersonalizado">SOY UN BOTON PERSONALIZADO</button>
-    </div>
-    <div>
-        <nav>
+    <header>
+        <nav class="menu">
             <ul>
                 <li> <a href="https://www.youtube.com/watch?v=9me1HvKs_1U">youtube</a></li>
+                <li><a  class="open" href="#">REGISTRARSE</a></li>
+                <li><a href="#">INICIAR SESION</a></li>
+                <li><a href="#">SALIR</a></li>
             </ul>
         </nav>
+    </header>
+<div>
+        <h2 class="texto">
+                La clase .modal, como dije antes, 
+                es la que oscurece el sitio.. 
+                por lo que le colocamos posición fija y un tamaño de 
+                100% en ancho y alto para que ocupe toda la pantalla. Display: none lo usamos para que esté oculto, con jquery lo vamos a hacer aparecer.
+                 Y el color, en rgba para que sea semitransparente, puede ser el color que quieran, yo use el negro con opacidad de 0.7
+    <br>
+                A la clase .ventana le asignamos posición absoluta y un ancho fijo (en este caso de 400px). Para poder centrarla usamos un left de 50% y un margen izquierdo con el valor de la mitad del ancho de la ventana y en negativo. En este caso, -200px. (por eso la necesidad del ancho fijo). El top de 15% es para separarlo del borde superior de la pantalla.
+                <br>
+                <br>
+                Por último los estilos aplicados al span son para darle forma al botón y posicionarlo en la esquina superior derecha. Queda en cada uno definir la forma, color y posición que quiera, no es lo más importante.
+         
+                Ahora toca darle funcionalidad al modal.
+                La clase .modal, como dije antes, 
+                es la que oscurece el sitio.. 
+                por lo que le colocamos posición fija y un tamaño de 
+                100% en ancho y alto para que ocupe toda la pantalla. Display: none lo usamos para que esté oculto, con jquery lo vamos a hacer aparecer.
+                 Y el color, en rgba para que sea semitransparente, puede ser el color que quieran, yo use el negro con opacidad de 0.7
+    <br>
+                A la clase .ventana le asignamos posición absoluta y un ancho fijo (en este caso de 400px). Para poder centrarla usamos un left de 50% y un margen izquierdo con el valor de la mitad del ancho de la ventana y en negativo. En este caso, -200px. (por eso la necesidad del ancho fijo). El top de 15% es para separarlo del borde superior de la pantalla.
+                <br>
+                <br>
+                Por último los estilos aplicados al span son para darle forma al botón y posicionarlo en la esquina superior derecha. Queda en cada uno definir la forma, color y posición que quiera, no es lo más importante.
+         
+                Ahora toca darle funcionalidad al modal.
+                La clase .modal, como dije antes, 
+                es la que oscurece el sitio.. 
+                por lo que le colocamos posición fija y un tamaño de 
+                100% en ancho y alto para que ocupe toda la pantalla. Display: none lo usamos para que esté oculto, con jquery lo vamos a hacer aparecer.
+                 Y el color, en rgba para que sea semitransparente, puede ser el color que quieran, yo use el negro con opacidad de 0.7
+    <br>
+                A la clase .ventana le asignamos posición absoluta y un ancho fijo (en este caso de 400px). Para poder centrarla usamos un left de 50% y un margen izquierdo con el valor de la mitad del ancho de la ventana y en negativo. En este caso, -200px. (por eso la necesidad del ancho fijo). El top de 15% es para separarlo del borde superior de la pantalla.
+                <br>
+                <br>
+                Por último los estilos aplicados al span son para darle forma al botón y posicionarlo en la esquina superior derecha. Queda en cada uno definir la forma, color y posición que quiera, no es lo más importante.
+         
+                Ahora toca darle funcionalidad al modal.
+                La clase .modal, como dije antes, 
+                es la que oscurece el sitio.. 
+                por lo que le colocamos posición fija y un tamaño de 
+                100% en ancho y alto para que ocupe toda la pantalla. Display: none lo usamos para que esté oculto, con jquery lo vamos a hacer aparecer.
+                 Y el color, en rgba para que sea semitransparente, puede ser el color que quieran, yo use el negro con opacidad de 0.7
+    <br>
+                A la clase .ventana le asignamos posición absoluta y un ancho fijo (en este caso de 400px). Para poder centrarla usamos un left de 50% y un margen izquierdo con el valor de la mitad del ancho de la ventana y en negativo. En este caso, -200px. (por eso la necesidad del ancho fijo). El top de 15% es para separarlo del borde superior de la pantalla.
+                <br>
+                <br>
+                Por último los estilos aplicados al span son para darle forma al botón y posicionarlo en la esquina superior derecha. Queda en cada uno definir la forma, color y posición que quiera, no es lo más importante.
+         
+                Ahora toca darle funcionalidad al modal.s
+        </h2>
+
+</div>
+
+<div class="modal">
+    <div class="ventana">
+            <center>
+                    <form action="registro.php" method="POST">
+                        <div id="content">
+                            <h1>Registro de Usuarios</h1>
+                            <br>
+                            <form action="registro.php" method="POST">
+                                <table border="0">
+                                    <tr>
+                                        <td><label>Nombres</label></td>
+                                        <td><input type="text" name="nombreuser" placeholder="Nombres" required/></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Apellidos</label></td>
+                                        <td><input type="text" name="apellidosuser" placeholder="Apellidos" required/></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Correo electronico</label></td>
+                                        <td><input type="text" name="emailuser" placeholder="example@mail.com" required/></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Contrase&ntilde;a</label></td>
+                                        <td><input type="password" name="pass" placeholder="**********************" required/></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Repetir Contrase&ntilde;a</label></td>
+                                        <td><input type="password" name="rpass" placeholder="**********************" required/></td>
+                                    </tr>
+                                    <tr>
+                                        <div class="botones">
+                                                <td><input class="registrar" type="submit"  value="Registrarme" ></input></label></td>
+                                                <td><input class="limpiar" type="reset" value="Reestablecer"></input></label></td>       
+                                        </div>
+                                        
+                                    </tr>
+                            </form>
+                        </div>
+                    </form>
+                </center>
+        <span class="cerrar">X</span>
     </div>
-	<div id="content">
-        <center>
-		<form action="registro.php" method="POST">
-            <div id="content">
-                <h1>Registro de Usuarios</h1>
-                <form action="registro.php" method="POST">
-                    <table border="0">
-                        <tr>
-                            <td><label>Nombres</label></td>
-                            <td><input type="text" name="nombreuser" placeholder="Nombres" required/></td>
-                        </tr>
-                        <tr>
-                            <td><label>Apellidos</label></td>
-                            <td><input type="text" name="apellidosuser" placeholder="Apellidos" required/></td>
-                        </tr>
-                        <tr>
-                            <td><label>Correo electronico</label></td>
-                            <td><input type="text" name="emailuser" placeholder="example@mail.com" required/></td>
-                        </tr>
-                        <tr>
-                            <td><label>Contrase&ntilde;a</label></td>
-                            <td><input type="password" name="pass" placeholder="**********************" required/></td>
-                        </tr>
-                        <tr>
-                            <td><label>Repetir Contrase&ntilde;a</label></td>
-                            <td><input type="password" name="rpass" placeholder="**********************" required/></td>
-                        </tr>
-                        <tr>
-                            <td><label><input type="submit" value="Registrarme"></input></label></td>
-                            <td><label><input type="reset" value="Reestablecer"></input></label></td>
-                        </tr>
-                </form>
-            </div>
-        </form>
-    </center>
-	</div>
+</div>
+
 </body>
 </html>
